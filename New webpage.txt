@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #002244;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        .experience, .project {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Website</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am [Your Name], currently working as a Business Intelligence Analyst at Citadel. I develop automated data pipelines to dashboards, significantly helping the CTO and their team reduce overage by 60% year-over-year. Additionally, I am actively involved in cost control initiatives and handle data analytics and reporting.</p>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Citadel - Business Intelligence Analyst</h3>
+                <p>Duration: 2.5 years</p>
+                <p>Responsibilities: Developing automated data pipelines, flagging source data errors, adjusting reports, ensuring accurate reflection of financial status, helping senior teams identify cost drivers, and providing actionable solutions.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: ESG Data Modeling</h3>
+                <p>Description: Focused on ESG data modeling in the power, transport, industry, buildings, and agriculture sectors.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Market Data Spend Control</h3>
+                <p>Description: Successfully set market data spend control strategies by analyzing users at the project level and counting unique vendors under each project.</p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Add your education background here.</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Personal Website | Created by [Your Name]</p>
+    </footer>
+</body>
+</html>
