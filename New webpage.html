@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        a:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0; /* Reduced padding */
+            text-align: center;
+        }
+        header h1, header h3 {
+            margin: 5px 0; /* Reduced margin */
+        }
+        nav {
+            background-color: #002244;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        section {
+            padding: 20px 20px 0px 20px; /* Reduced bottom padding */
+            margin-bottom: 0px; /* Reduced margin */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 20px; /* Reduced margin */
+        }
+        .experience, .project {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .experience h3 {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-left: 0px; /* Adjust the left margin to align with other text */
+            transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+        }
+        .experience h3:hover {
+            background-color: #e9ecef; /* Highlight background on hover */
+            color: #0056b3; /* Change text color on hover */
+        }
+        .experience h3 img {
+            height: 40px;
+            margin-right: 15px; /* Add space between the logo and the title name */
+        }
+        .achievements-container {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .achievement-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between blocks */
+        }
+        .achievement-block {
+            background-color: #e9ecef;
+            padding: 10px; /* Reduced padding */
+            margin-bottom: 10px;
+            border-radius: 5px;
+            flex: 1 1 calc(50% - 10px); /* Two blocks per row */
+            box-sizing: border-box;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lingyu (Calvin) Cao</h1>
+        <h3>Business Intelligence | Data Science | Data Analytics | Data Engineering</h3>
+    </header>   
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a Business Intelligence Analyst at Citadel with over five years of comprehensive experience in data analytics within the finance industry. I have been working in Strategic Finance team at Citadel for the past three years, where I have significantly contributed to the company's operational efficiency and cost management. Prior to Citadel, I worked for Statista, a market research company for two years.</p>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3><img src="citadel_logo.jpg" alt="Citadel Logo"> Citadel - Business Intelligence Analyst</h3>
+                <p>Duration: 3 years</p>
+                <p>Responsibilities: Developing automated data pipelines, flagging source data errors, adjusting reports, ensuring accurate reflection of financial status, helping senior teams identify cost drivers, and providing actionable solutions.</p>
+                <div class="achievements-container">
+                    <h4>Key Achievements</h4>
+                    <div class="achievement-row">
+                        <div class="achievement-block">
+                            <h5>Financial Analyses and Insights</h5>
+                            <ul>
+                                <li>Conducted in-depth analyses on cloud usage, server assets, market data, front-office income statements, and back-office costs.</li>
+                                <li>Identified key highlights and cost drivers, providing actionable insights to senior leadership.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Cost Reduction Initiatives</h5>
+                            <ul>
+                                <li>Led detailed cost analyses for Citadel's cloud usage, pinpointing top cost drivers and presenting findings to senior leadership.</li>
+                                <li>Achieved a remarkable 60% reduction in overages year-over-year.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Process Optimization</h5>
+                            <ul>
+                                <li>Rebuilt the cloud accrual process and automated invoice payment and allocation activities through cross-functional collaboration.</li>
+                                <li>Reduced accounting noise in Citadel’s financial system by 80%.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Data Pipeline and Dashboard Development</h5>
+                            <ul>
+                                <li>Constructed data pipelines using SQL, Python, DAX, Alteryx, and created Tableau dashboards to monitor technology expenses and assets.</li>
+                                <li>Reports achieved over 1000 monthly views, guiding significant cost-saving initiatives.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Automation and Efficiency Enhancements</h5>
+                            <ul>
+                                <li>Automated data pipelines with SQL and Python, cutting average report generation time by 60%.</li>
+                                <li>Enhanced efficiency and accuracy in delivering insights for strategic initiatives, including GCP migration.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Advanced Data Management</h5>
+                            <ul>
+                                <li>Developed multi-layered Python solutions to manage and transform complex data from various sources, including MSSQL Server, Google BigQuery, Amazon RDS, RESTful API, and SSAS Cube.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Quality Control Measures</h5>
+                            <ul>
+                                <li>Implemented comprehensive quality control measures across pipelines and reports.</li>
+                                <li>Cross-checked data against multiple sources, performed automated validations, and regularly reviewed costs with businesses to ensure data accuracy and reliability.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Stakeholder Communication</h5>
+                            <ul>
+                                <li>Built alerting functionality to notify stakeholders with important messages via overage emails, Slack messages, and Tableau subscriptions.</li>
+                                <li>Ensured timely actions through effective communication channels.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience">
+                <h3><img src="statista_logo.jpg" alt="Statista Logo"> Statista - Analyst</h3>
+                <p>Duration: 2 years</p>
+                <p>Responsibilities: Developing automated data pipelines, flagging source data errors, adjusting reports, ensuring accurate reflection of financial status, helping senior teams identify cost drivers, and providing actionable solutions.</p>
+                <div class="achievements-container">
+                    <h4>Key Achievements</h4>
+                    <div class="achievement-row">
+                        <div class="achievement-block">
+                            <h5>Customer Segmentation</h5>
+                            <ul>
+                                <li>Led a Python project that identified potential churners, decreasing churn rate by 17%.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Machine Learning Enhancement</h5>
+                            <ul>
+                                <li>Improved ML models' AUC score from 0.78 to 0.82 through advanced feature engineering and data imputation.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Data Visualization and Dashboards</h5>
+                            <ul>
+                                <li>Visualized data using Seaborn, Matplotlib, and Plotly; built comprehensive dashboards in PowerBI with DAX and data model features.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Team Management</h5>
+                            <ul>
+                                <li>Managed a research team assisting clients with data analysis and project support.</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-block">
+                            <h5>Analytical Reporting</h5>
+                            <ul>
+                                <li>Presented results and wrote reports for analyses, including AB tests and exploratory data analysis, for team leaders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: ESG Data Modeling</h3>
+                <p>Description: Focused on ESG data modeling in the power, transport, industry, buildings, and agriculture sectors.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Market Data Spend Control</h3>
+                <p>Description: Successfully set market data spend control strategies by analyzing users at the project level and counting unique vendors under each project.</p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Add your education background here.</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Personal Website | Created by Calvin Cao</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const experiences = document.querySelectorAll('.experience h3');
+            experiences.forEach(exp => {
+                exp.addEventListener('click', function() {
+                    const achievementsContainer = exp.parentElement.querySelector('.achievements-container');
+                    achievementsContainer.style.display = achievementsContainer.style.display === 'none' || achievementsContainer.style.display === '' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
